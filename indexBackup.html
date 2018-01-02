@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://localhost/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="http://localhost/jquery-3.2.0.min.js"></script>
+    <script src="http://localhost/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('.carousel').carousel({
+            interval: 1000 * 5
+        });
+    </script>
+    <style>
+        .carousel-inner > .item > img
+        {
+            width: 1200px;           
+            height:500px;
+        }
+        .page-header
+        {
+            text-align:center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel"  >
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/cover1.jpg" alt="Chania" >
+                </div>
+                <div class="item">
+                    <img src="images/cover2.png" alt="Chania" >
+                </div>
+                <div class="item">
+                    <img src="images/cover3.jpg" alt="Flower" >
+                </div>
+                <div class="item">
+                    <img src="images/cover4.jpg" alt="Flower" >
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="page-header" style="font-size:15px">
+        <h1>Code it Possible!</h1>
+    </div>
+    <div class="col-md-4 myClassName">
+        <div class="thumbnail tile tile-medium tile-teal">
+            <a href="#">
+                <h1>Course Dashboard</h1>
+            </a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

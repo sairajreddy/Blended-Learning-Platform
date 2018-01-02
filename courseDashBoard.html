@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Course DashBoard</title>
+    <script src="http://localhost/jquery-3.2.0.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://localhost/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/courseDashBoard.js"></script>
+    <link href="http://localhost/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .panel_icon{
+            width:200px;
+            height:200px;
+            margin:auto;
+            display:block;
+        }
+        .suggestion{
+            border:0.5px solid black;
+        }
+        .suggestion:hover{
+            background-color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--Page Heading-->
+    <div class="page-header">
+        <h1 align="center">Course Dashboard</h1>
+    </div>
+    <!--Search box-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div id="imaginary_container">
+                    <div class="input-group stylish-input-group">
+                        <input type="text" class="form-control" placeholder="Search Courses" id="searchStr">
+                        <span class="input-group-addon">
+                            <button onclick="fetchData()">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="search" class="col-sm-4 col-sm-offset-4" ></div>
+    <br/>
+    <br/>
+    <div class="container">
+        <!--Course Portfolio-->
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <img src="http://localhost/Project/images/JavaScript.png" class ="panel_icon" />
+                    <p style="text-align:center">For designing dynamic web pages</p>
+                    <button style="background-color:lightblue;" name ="JavaScript"class="btn btn-default center-block" onclick="openWindowJS()">Learn JavaScript</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <img src="http://localhost/Project/images/Java.png" class="panel_icon" />
+                <p style="text-align:center">Java is a OO computer programming language.</p>
+                <button style="background-color:lightblue;" name ="Java" class="btn btn-default center-block" align="center" onclick="openWindowJava()">Learn Java</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <img src="http://localhost/Project/images/DataStructures.jpg" class="panel_icon" />
+            <p style="text-align:center">DS deals with data</p>
+            <button style="background-color:lightblue;" class="btn btn-default center-block">Learn Data Structures</button>
+        </div>
+    </div>
+    </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <img src="http://localhost/Project/images/MachineLearning.jpg" class="panel_icon img-circle" />
+                    <p style="text-align:center">An upcoming field that trains machines.</p>
+                    <button style="background-color:lightblue;" class="btn btn-default center-block">Learn ML</button>
+                </div>
+            </div>
+        </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <img src="http://localhost/Project/images/Python.jpg" class="img-responsive panel_icon" />
+                <p style="text-align:center">Python is an interpreter based computer programming language. Useful for data analytics</p>
+                <button style="background-color:lightblue;" class="btn btn-default center-block">Learn Python</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <img src="http://localhost/Project/images/Cpp.png" class="panel_icon img-circle" />
+                <p style="text-align:center">C++is widely used application language.It is very similar to C.</p>
+                <button style="background-color:lightblue;" class="btn btn-default center-block">Learn C++</button>
+             </div>
+          </div>
+     </div>
+    </div>
+</body>
+</html>
